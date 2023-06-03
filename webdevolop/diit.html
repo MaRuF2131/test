@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dafodil Institute of IT</title>
+    <style>
+        table, th, td {
+            border: 2px solid red;
+            border-collapse: collapse;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:brown;text-align:center;"> Daffodil institute of IT</h1> <br><br>
+
+    <a href="file:///C:/Users/User/OneDrive/Desktop/webdevolop/diit.html"> <img src="img/header_logo_one.png" width="150" height="150" title=" Daffodil institute of IT" alt=" diit logo"> </img></a>
+    <p style="text-align:center;">
+        <a href=" https://diit.edu.bd/admission/">about us</a>
+        <a href=" https://diit.edu.bd/academic/"> Academic</a>
+        <a href=" https://diit.edu.bd/pure/administrator/"> Administrator</a>
+    </p>
+    <hr>
+    <img src="img/student.jpg" width="100%" height="700">
+
+    <hr>
+
+    <h1 style="color:red">All Action on form</h1><br>
+    <form action="" target="_blank" method="get">
+        <lebel for="fname"> First Name </lebel><br>
+        <input type="text" id="fname" name="fname" placeholder=" 1st name" required><br>
+        <lebel for="lname">last Name</lebel><br>
+        <input type="text" id="lname" name="lname" placeholder="lst name"><br>
+        <lebel for="id">ID</lebel><br>
+        <input style="number" id="id" name="id" required><br>
+        <input type="submit" value="submit">
+        <input type="reset">
+    </form>
+
+    <form action="" target="_blank" method="post">
+        <p>form using default value</p>
+        <lebel for="fname"> First Name </lebel><br>
+        <input type="text" id="fname" name="fname" value=" Maruf"><br>
+        <lebel for="lname">last Name</lebel><br>
+        <input type="text" id="lname" name="lname" value=" ahmmed"><br>
+        <lebel for="id">ID</lebel><br>
+        <input style="text" id="id" name="id" value="210006"> <br>
+        <input type="submit" value="submit"> <br>
+    </form>
+
+    <p> use autocomplete default vabe on akhane off kora hoise</p><br>
+    <form action="" target="_blank" method="post" autocomplete="off">
+        <lebel for="fname"> First Name </lebel><br>
+        <input type="text" id="fname" name="fname"><br>
+        <lebel for="lname">last Name</lebel><br>
+        <input type="text" id="lname" name="lname"><br>
+        <lebel for="id">ID</lebel><br>
+        <input style="text" id="id" name="id"> <br>
+        <input type="submit" value="submit"> <br>
+    </form>
+
+    <p>The select element defines a drop-down list:</p><br>
+    <form action="">
+        <lebel for="dpt"> deparment:</lebel>
+        <select id="dpt" name="dpt">
+            <option value="CSE">CSE</option>
+            <option value="THM"> THM</option>
+            <option value=" BBA"> BBA</option>
+            <input type="submit">
+        </select>
+    </form>
+    <br>
+
+    <p>select form using size and multiple thats mean we choose multi option</p><br>
+    <form action="">
+        <label for="dpt"> deparment:</label>
+        <select id="dpt" name="dpt" size="2" multiple>
+            <option value="CSE">CSE</option>
+            <option value="THM"> THM</option>
+            <option value=" BBA"> BBA</option>
+            <input type="submit">
+            <p> hold the ctrl button to select multi</p>
+        </select>
+    </form>
+    <br>
+
+    <p> This is massage Box</p>
+    <form action="">
+        <textarea name="massage" rows="10" cols="30" style="background-color:red">type your romantice MSG </textarea>
+        <br>
+        <input style="color:red" type="submit" value="Send MSG">
+    </form>
+    <br />
+
+    <h2>The button Element plz click</h2>
+    <button style="color:red" type="button" onclick="alert('HI janeman kiya karraheo')">Click Me!</button>
+
+    <p> Add to number</p>
+    <form action="" oninput="x.value = parseInt(y.value) + parseInt(z.value)">
+        0
+        <input type="range" id="y" name="y" value="20">
+        100
+        +
+        <input type="number" id="z" name="z" value="30">
+        =
+        <output name="x" for="y z"></output><br>
+        <input type="submit">
+    </form>
+    <br>
+
+    <p> Use of optgroup </p>
+    <form action="">
+        <label for="topst"> Top Student:</label>
+        <select id="topst" name="topst">
+            <optgroup label="male">
+                <option value="maruf"> maruf</option>
+                <option value="rafi"> rafi</option>
+                <option value="tusar"> tusar</option>
+            </optgroup>
+            <optgroup label="female">
+                <option value="neseta"> neseta</option>
+                <option value="Shara"> shara</option>
+                <option value="Ekra"> Ekra</option>
+            </optgroup>
+            <br>
+            <input type="submit">
+        </select>
+    </form>
+    <br>
+
+    <p> use of all input type</p>
+    <form action=""> 
+        <label for="c">color:</label>
+        <input type="color" id="c" name="c" value="red">
+        <label for="d"> ..date:</label>
+        <input type="date" id="d" name="d">
+        <label for="dl"> ..date time local:</label>
+        <input type="datetime-local" id="dl" name="lc">
+        <label for="em"> ..email:</label>
+        <input type="email" id="em" name="em">
+        <label for="fl"> ..file:</label>
+        <input type="file" id="fl" name="fl"><br><br>
+        <label for="mn"> ..Month:</label>
+        <input type="month" id="mn" name="mn">
+        <label for="num"> ..number:</label>
+        <input type="number" id="num" name="num">
+        <label for="pas"> ..passwr:</label>
+        <input type="password" id="pas" name="pas">
+        <label for="sch"> ..search:</label>
+        <input type="search" id="sch" name="sch"><br><br>
+        <label for="t"> ..Tel:</label>
+        <input type="tel" id="t" name="t">
+        <label for="tm"> ..Time:</label>
+        <input type="time" id="tm" name="tm">
+        <label for="ul"> ..url:</label>
+        <input type="url" id="ul" name="ul">
+        <label for="w"> ..week:</label>
+        <input type="week" id="w" name="w">
+    </form>
+
+    <p>Use of radio button</p><br>
+    <form action="">
+        <input type="radio" id="20" name="bt" value="20 batch">
+        <lebel for="20">20 batch</lebel><br>
+
+        <input type="radio" id="21" name="bt" value="21 batch">
+        <lebel for="21"> 21 batch</lebel><br />
+
+        <input type="radio" id="21" name="bt" value="21 batch">
+        <lebel for="21"> 21 batch</lebel><br />
+
+        <input type="radio" id="22" name="bt" value="22 batch">
+        <lebel for="22"> 22 batch</lebel>
+
+    </form>
+
+    <br />
+    <p> use check Box button </p><br />
+    <form action="">
+        <input type="checkbox" id="box1" name="box1" value="Rajshahi">
+        <lebel for="box1"> Rajshahi</lebel><br>
+        <input type="checkbox" id="box2" name="box2" value="Dhaka">
+        <lebel for="box2">Dhaka</lebel>
+
+    </form>
+
+    <hr>
+    <p> Work on video</p><br>
+    <div style="text-align:center">
+        <video id="video1" width="420" controls muted>
+            <source src="video/mov_bbb.mp4" type="video/mp4">
+        </video><br><br>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <audio controls>
+            <source src="audio/horse.mp3" type="audio/mp3">
+
+        </audio>
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 560;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 420;
+        }
+
+    </script>
+
+    <br>
+    <table>
+        <caption style="text-align:center; color:blue"> Information</caption>
+        <tr>
+            <th>maruf</th>
+            <th>rafi</th>
+            <th>Tusar</th>
+        </tr>
+        <tr>
+            <td>Rajshahi</td>
+            <td>Dhaka</td>
+            <td>Dhaka</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+        </tr>
+    </table>
+    <br>
+    <p style="text-align:center;color:red">
+        <iframe src="mar.html" height="400" width="1000" name="ifm" title="Iframe Example"></iframe>
+    <p style="text-align:center">
+    <a href="file:///C:/Users/User/OneDrive/Desktop/webdevolop/diit.html?c=%23000000&d=&lc=&em=&fl=&hd=&im.x=4&im.y=9&mn=&num=&pas=&sch=&t=&tm=&ul=&w=" target="ifm">DIIT</a></p>
+    </p>
+</body>
+</html>
